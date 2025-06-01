@@ -1,0 +1,150 @@
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, ivory, pink);
+  color: black;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.cap {
+  height: 589px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+}
+
+.cap h1 {
+  font-size: 4em;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  color: black;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+.imagen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  animation: cambiarFotos 18s infinite;
+}
+
+@keyframes cambiarFotos {
+  0%   { background-image: url('../practicaexamen2/img/ani/back.png'); }
+  11%  { background-image: url('../practicaexamen2/img/ani/bean.png'); }
+  22%  { background-image: url('../practicaexamen2/img/ani/bond.png'); }
+  33%  { background-image: url('../practicaexamen2/img/ani/break.png'); }
+  44%  { background-image: url('../practicaexamen2/img/ani/ghost.png'); }
+  55%  { background-image: url('../practicaexamen2/img/ani/pulp.png'); }
+  66%  { background-image: url('../practicaexamen2/img/ani/rider.png'); }
+  77%  { background-image: url('../practicaexamen2/img/ani/taxi.png'); }
+  88%  { background-image: url('../practicaexamen2/img/ani/team.png'); }
+  100% { background-image: url('../practicaexamen2/img/ani/back.png'); }
+}
+
+/* Cos */
+.cos {
+  padding: 2rem 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.item {
+  height: 200px;
+  background: rgba(255, 255, 255, 0.95);
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  transform-origin: center center;
+  position: relative;
+  z-index: 1;
+}
+
+
+.item:hover img {
+  animation: girarYcrecer 0.8s forwards;
+  cursor: pointer;
+}
+
+@keyframes girarYcrecer {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.3) rotate(180deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+
+.peudefoto {
+  height: 40px;
+  background-color: #eee;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding-left:  20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-top: 1px solid #ccc;
+}
+
+/* Peu de pàgina */
+.peu {
+  height: 220px;
+  text-align: center;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.peu img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media screen and (max-width: 940px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
