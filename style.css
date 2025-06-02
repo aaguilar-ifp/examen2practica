@@ -2,8 +2,12 @@
 body {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
-  background: linear-gradient(135deg, ivory, pink);
-  color: black;
+   color: black;
+    background-image: url('../practicaexamen2/img/fons.jpg'); /* o img/back.png si está en carpeta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Hace que se quede fijo al hacer scroll */
 }
 
 
@@ -19,6 +23,7 @@ body {
   overflow: hidden;
   text-align: center;
   align-items: center;
+
 }
 
 .cap h1 {
@@ -51,16 +56,16 @@ body {
 }
 
 @keyframes cambiarFotos {
-  0%   { background-image: url('../practicaexamen2/img/ani/back.png'); }
-  11%  { background-image: url('../practicaexamen2/img/ani/bean.png'); }
-  22%  { background-image: url('../practicaexamen2/img/ani/bond.png'); }
-  33%  { background-image: url('../practicaexamen2/img/ani/break.png'); }
-  44%  { background-image: url('../practicaexamen2/img/ani/ghost.png'); }
-  55%  { background-image: url('../practicaexamen2/img/ani/pulp.png'); }
-  66%  { background-image: url('../practicaexamen2/img/ani/rider.png'); }
-  77%  { background-image: url('../practicaexamen2/img/ani/taxi.png'); }
-  88%  { background-image: url('../practicaexamen2/img/ani/team.png'); }
-  100% { background-image: url('../practicaexamen2/img/ani/back.png'); }
+  0%   { background-image: url('back.png'); }
+  11%  { background-image: url('bean.png'); }
+  22%  { background-image: url('bond.png'); }
+  33%  { background-image: url('break.png'); }
+  44%  { background-image: url('ghost.png'); }
+  55%  { background-image: url('pulp.png'); }
+  66%  { background-image: url('rider.png'); }
+  77%  { background-image: url('taxi.png'); }
+  88%  { background-image: url('team.png'); }
+  100% { background-image: url('back.png'); }
 }
 
 /* Cos */
