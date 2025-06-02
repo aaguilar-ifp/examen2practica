@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
    color: black;
-    background-image: url('../practicaexamen2/img/fons.jpg'); /* o img/back.png si está en carpeta */
+    background-image: url('fons.jpg'); /* o img/back.png si está en carpeta */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
