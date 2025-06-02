@@ -56,16 +56,16 @@ body {
 }
 
 @keyframes cambiarFotos {
-  0%   { background-image: url('back.png'); }
-  11%  { background-image: url('bean.png'); }
-  22%  { background-image: url('bond.png'); }
-  33%  { background-image: url('break.png'); }
-  44%  { background-image: url('ghost.png'); }
-  55%  { background-image: url('pulp.png'); }
-  66%  { background-image: url('rider.png'); }
-  77%  { background-image: url('taxi.png'); }
-  88%  { background-image: url('team.png'); }
-  100% { background-image: url('back.png'); }
+  0%   { background-image: url('../examen2practica/ani/back.png'); }
+  11%  { background-image: url('../examen2practica/ani/bean.png'); }
+  22%  { background-image: url('../examen2practica/ani/bond.png'); }
+  33%  { background-image: url('../examen2practica/ani/break.png'); }
+  44%  { background-image: url('../examen2practica/ani/ghost.png'); }
+  55%  { background-image: url('../examen2practica/ani/pulp.png'); }
+  66%  { background-image: url('../examen2practica/ani/rider.png'); }
+  77%  { background-image: url('../examen2practica/ani/taxi.png'); }
+  88%  { background-image: url('../examen2practica/ani/team.png'); }
+  100% { background-image: url('../examen2practica/ani/back.png'); }
 }
 
 /* Cos */
